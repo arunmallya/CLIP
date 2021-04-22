@@ -23,7 +23,7 @@ _MODELS = {
 }
 
 
-def _download(url: str, root: str = os.path.expanduser(os.path.join(os.environ['TORCH_HOME'], "/clip"))):
+def _download(url: str, root: str = os.path.expanduser(os.path.join(os.environ['TORCH_HOME'], "clip"))):
     os.makedirs(root, exist_ok=True)
     filename = os.path.basename(url)
 
